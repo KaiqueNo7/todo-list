@@ -1,0 +1,40 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  padding: 1em 0;
+}
+
+.formBorder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  padding: 1em 0;
+  border-bottom: 1px solid var(--gray-400);
+}
+
+p {
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+p span {
+  background-color: var(--gray-500);
+  padding: 0.3em 0.7em;
+  border-radius: 1em;
+  color: var(--white);
+  font-size: 12px;
+  margin-left: 0.3rem;
+}
+
+.created {
+  color: var(--blue);
+}
+
+.done {
+  color: var(--purple);
+}

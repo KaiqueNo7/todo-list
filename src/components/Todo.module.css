@@ -1,0 +1,50 @@
+.todo {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  width: 100%;
+  background-color: var(--gray-400);
+  border-radius: 0.5em;
+  border: 1px solid var(--gray-500);
+}
+
+.textTodoDone {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.textTodo {
+  color: var(--white);
+}
+
+.todo input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+}
+
+.todo input[type="checkbox"]:checked {
+  border: 2px solid var(--purple-dark);
+  background-color: var(--purple-dark);
+}
+
+.todo input[type="checkbox"]:checked::after {
+  content: '✔';
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+}
+
+.todo button {
+  all: unset;
+  cursor: pointer;
+}
